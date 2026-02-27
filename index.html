@@ -7,19 +7,70 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Tableau langauges</title>
+		<style>
+			ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333333;
+	}
+
+	  ul li {
+	  float: left;
+	}
+
+	  ul li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	  ul li a:hover {
+	  background-color: #111111;
+	}
+	
+	  ul li a.current {
+	  background-color: #111111;
+	  pointer-events: none;
+	  cursor: default;
+	}
+	</style>
 	</head>
 	
 	<body style="background-color:;">
-	
-		<h1>Mes Travaux informatique</h1>
 		<ul>
-		<li><a href = "imageJavaCss.html" target="_blank" >Exercice #2</a>
-		<li><a href = "indexCodeBase.html" target="_blank" >Exercice #1</a>
-		<li><a href = "exercice3.html" target="_blank" >Exercice #4</a>
+			<li><a href="index.html" class="current">Acceuil</a></li>
+			<li><a href= "exercice1.html">Exercice #1</a></li>
+			<li><a href= "exercice2.html">Exercice #2</a></li>
+			<li><a href= "exercice3.html">Exercice #3</a></li>
 		</ul>
+		<h1>Mes Travaux informatique</h1>
 		<p>Auter: Gevorg Shahbazyan</p>
-		<table> 
-		
+		<table border="1">
+      <thead>
+      <tr>
+      <th rowspan="2"><a href = "exercice2.html">Exercice #2</a></th>
+      <th colspan="2">Nom de l’élève</th>
+      <th rowspan="2">Majeur</th>
+      <th rowspan="2">Crédits</th>
+    </tr>
+    <tr>
+      <th>Prénom</th>
+      <th>Nom de famille</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3741255</td>
+      <td>Marthe</td>
+      <td>Julien</td>
+      <td>Science informatique</td>
+      <td>240</td>
+    </tr>
+
 	</body>
 	
 </html>
