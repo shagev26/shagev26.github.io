@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ======================================================
+       Auteur : Gevorg Shahbazyan
+       Cours : ICS3U
+       Fichier : biographie.html
+       ====================================================== -->
+  <meta charset="UTF-8">
+  <title>Biographie</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS INTERNE -->
+  <style>
+    /* Style unique à cette page : un paragraphe spécial */
+    #phrase-personnelle{
+      font-weight: bold;
+      background-color: #1f2937;
+      padding: 10px;
+      border: 2px solid #22c55e;
+    }
+  </style>
+</head>
+
+<body id="profil">
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="poeme.html">Poème</a></li>
+      <li><a href="voyage.html">Voyage</a></li>
+      <li><a href="biographie.html">Biographie</a></li>
+    </ul>
+  </div>
+
+  <div class="page">
+    <h1>Ma biographie</h1>
+
+    <div class="boite">
+      <h2>Menu (liens internes)</h2>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#infos">Infos non-privées</a></li>
+        <li><a href="#liens">Mes liens préférés</a></li>
+        <li><a href="#competences">Compétences technologiques</a></li>
+      </ul>
+    </div>
+
+    <div class="boite boite-bleu" id="profil">
+      <h2>Profil</h2>
+      <img class="image-moyenne" src="images/moi.jpg" alt="Image qui me représente (locale)">
+
+      <p><strong>Pseudo :</strong> TonPseudoIci</p>
+      <p id="phrase-personnelle">
+        J’aime apprendre et créer des projets en programmation Web.
+      </p>
+    </div>
+
+    <div class="boite" id="infos">
+      <h2>Infos importantes (non-privées)</h2>
+      <ul>
+        <li>Intérêts : technologie, sport, projets créatifs.</li>
+        <li>Objectif : améliorer mes compétences en HTML et CSS.</li>
+        <li>Qualité : je suis sérieux et organisé.</li>
+      </ul>
+    </div>
+
+    <div class="boite boite-vert" id="liens">
+      <h2>Mes liens préférés (externes)</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      </ul>
+      <p><a href="index.html">← Retour à la page d’accueil</a></p>
+    </div>
+
+    <div class="boite" id="competences">
+      <h2>Compétences technologiques (tableau)</h2>
+
+      <table>
+        <tr>
+          <th>Technologie</th>
+          <th>Niveau</th>
+          <th>Commentaire</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td><strong>Expert</strong></td>
+          <td>Je structure des pages propres avec liens, images, listes, tableaux.</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td><strong>Compétent</strong></td>
+          <td>Je sais faire une barre de navigation et un style constant.</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td><strong>Débutant</strong></td>
+          <td>Je commence avec des scripts simples.</td>
+        </tr>
+        <tr>
+          <td>GitHub Pages</td>
+          <td><strong>Compétent</strong></td>
+          <td>Je publie un site et j’organise mes dossiers.</td>
+        </tr>
+      </table>
+
+      <p><a href="index.html">← Retour à la page d’accueil</a></p>
+    </div>
+
+    <div class="footer">
+   <p>Portfolio Gevight</p>
+      <p><a href="#profil">Retour au haut de la biographie</a></p>
+    </div>
+  </div>
+  
+</body>
+</html>
+

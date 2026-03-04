@@ -1,0 +1,139 @@
+/* =========================================================
+   Auteur : Gevorg Shahbazyan
+   Cours : ICS3U
+   Fichier : style.css
+   Description : CSS externe (look constant sur toutes les pages)
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   NAVBAR HORIZONTALE
+   Source: https://www.w3schools.com/css/css_navbar.asp
+   --------------------------------------------------------- */
+.navbar{
+  background-color: #111827;
+  border-bottom: 3px solid #38bdf8;
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Source: W3Schools navbar */
+}
+
+.navbar li{
+  float: left; /* Source: W3Schools navbar */
+}
+
+.navbar li a{
+  display: block; /* Source: W3Schools navbar */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 18px;
+  font-weight: bold;
+}
+
+.navbar li a:hover{
+  background-color: #2563eb; /* Source: W3Schools navbar */
+}
+
+/* ---------------------------------------------------------
+   BASE : couleurs, police, marges
+   --------------------------------------------------------- */
+body{
+  background-color: #0b1220;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.page{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h1{
+  color: #38bdf8;
+  font-size: 34px;
+}
+
+h2{
+  color: #93c5fd;
+  font-size: 24px;
+}
+
+h3{
+  color: #c7d2fe;
+}
+
+/* ---------------------------------------------------------
+   BOÎTES/fancy boxes
+   https://developer.mozilla.org/fr/docs/Learn/CSS/Howto/create_fancy_boxes
+
+   --------------------------------------------------------- */
+.boite{
+  background-color: #111827;
+  border: 2px solid #334155;
+  padding: 16px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.boite-bleu{
+  border: 2px solid #38bdf8;
+}
+
+.boite-vert{
+  border: 2px solid #22c55e;
+}
+
+.note{
+  background-color: #0f172a;
+  border: 2px dashed #93c5fd;
+  padding: 14px;
+}
+
+/* Images */
+.image-large{
+  width: 100%;
+  border: 2px solid #334155;
+}
+
+.image-moyenne{
+  width: 340px;
+  border: 2px solid #334155;
+}
+
+/* Listes */
+ul{
+  margin-top: 10px;
+}
+
+/* Tableaux */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0f172a;
+}
+
+th, td{
+  border: 2px solid #334155;
+  padding: 10px;
+}
+
+th{
+  background-color: #1f2937;
+}
+
+/* Pied de page */
+.footer{
+  margin-top: 25px;
+  border-top: 2px solid #334155;
+  padding-top: 10px;
+  color: #cbd5e1;
+}
+
+
