@@ -137,3 +137,7 @@ th{
 }
 
 
+a:link { color: #00e6e6; }    /* Cyan clair pour le fond bleu foncé */
+a:visited { color: #ffcc00; } /* Jaune pour éviter le violet illisible */
+a:hover { color: #ffffff; }   /* Blanc au survol */
+a:active { color: #ff0000; }  /* Rouge au clic */
