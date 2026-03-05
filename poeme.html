@@ -12,25 +12,53 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- CSS INTERNE  -->
-  <style>
-    .poeme-texte{
-      background-color: #0f172a;
-      border: 2px dashed #38bdf8;
-      padding: 14px;
-      font-family: "Times New Roman", serif;
-      font-size: 18px;
-    }
-	.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; 
+
+<!--Source:'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');-->
+
+<style>
+
+
+
+.poeme-container{
+  display:flex;
+  flex-direction:row;        /* keeps items side by side */
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:nowrap;          /* prevents poem from going under */
 }
-  </style>
+
+.center-image{
+  width:675px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.poeme-texte{
+  background: linear-gradient(145deg,#0f172a,#1e293b);
+  border:2px solid #38bdf8;
+  border-radius:12px;
+  padding:25px;
+  width:850px;
+
+  font-family:'Verdana', cursive;
+  font-size:22px;
+  line-height:1.6;
+
+  text-align:center;
+  color:#f8fafc;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+</style>
+
+
 
 </head>
 
 <body id="top">
+
   <div class="navbar">
     <ul>
       <li><a href="index.html">Accueil</a></li>
@@ -41,6 +69,7 @@
   </div>
 
   <div class="page">
+
     <h1>Patience, Though I Have Not</h1>
 
     <div class="boite boite-vert">
@@ -48,56 +77,68 @@
       <p>
         Source :
         <a href="https://www.poetryfoundation.org/poems/50013/patience-though-i-have-not" target="_blank">
-          https://www.poetryfoundation.org/poems/50013/patience-though-i-have-not
+        https://www.poetryfoundation.org/poems/50013/patience-though-i-have-not
         </a>
       </p>
     </div>
 
     <div class="boite">
-      <img src="images/poeme.png" width="450" class="center-image"/>
-    </div>
 
-    <div class="boite">
       <h2>Poème</h2>
-      <div class="poeme-texte">
-	  <p style="text-align: center;">
-       Patience, though I have not<br>
-      The thing that I require,<br>
-      I must of force, God wot,<br>
-      Forbear my most desire;<br>
-      For no ways can I find   <br>
-      To sail against the wind.<br>
 
-      Patience, do what they will<br>
-      To work me woe or spite,<br>
-      I shall content me still<br>
-      To think both day and night,<br>
-      To think and hold my peace,<br>
-      Since there is no redress.<br>
+      <div class="poeme-container">
 
-      Patience, withouten blame,<br>
-      For I offended nought;<br>
-      I know they know the same,<br>
-      Though they have changed their thought.<br>
-      Was ever thought so moved<br>
-      To hate that it hath loved?<br>
+        <!-- IMAGE -->
+        <img src="images/poeme.png" class="center-image"/>
 
-      Patience of all my harm,<br>
-      For fortune is my foe;<br>
-      Patience must be the charm<br>
-      To heal me of my woe:<br>
-      Patience without offence<br>
-      Is a painful patience.<br></p>
+        <!-- POEME -->
+        <div class="poeme-texte">
+          <p style="text-align:center;">
+
+          Patience, though I have not<br>
+          The thing that I require,<br>
+          I must of force, God wot,<br>
+          Forbear my most desire;<br>
+          For no ways can I find<br>
+          To sail against the wind.<br><br>
+
+          Patience, do what they will<br>
+          To work me woe or spite,<br>
+          I shall content me still<br>
+          To think both day and night,<br>
+          To think and hold my peace,<br>
+          Since there is no redress.<br><br>
+
+          Patience, withouten blame,<br>
+          For I offended nought;<br>
+          I know they know the same,<br>
+          Though they have changed their thought.<br>
+          Was ever thought so moved<br>
+          To hate that it hath loved?<br><br>
+
+          Patience of all my harm,<br>
+          For fortune is my foe;<br>
+          Patience must be the charm<br>
+          To heal me of my woe:<br>
+          Patience without offence<br>
+          Is a painful patience.
+
+          </p>
+        </div>
+
       </div>
 
-    
     </div>
-	
-     <a href="#top">Revenir au début</a>
+
+    <br>
+
+    <a href="#top">Revenir au début</a>
+
     <div class="footer">
       <p>Portfolio Gevight</p>
     </div>
+
   </div>
+
 </body>
 </html>
-
