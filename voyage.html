@@ -8,7 +8,41 @@
        ====================================================== -->
   <meta charset="UTF-8">
   <title>Voyage parfait - Tokyo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .endroit-description {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #cbd5e1;
+      text-align: justify;
+      margin: 0;
+    }
+
+    .endroit-description em {
+      color: #38bdf8;
+      font-style: italic;
+    }
+
+    .endroit-conteneur {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .endroit-titre {
+      font-size: 18px;
+      color: #7dd3fc;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+	.boite ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+	<!-- Source Claude Ai-->
+  </style>
 </head>
 
 <body id="Mon voyage parfait">
@@ -28,24 +62,54 @@
       <h2>Description de la destination</h2>
       <p>
         Mon voyage parfait serait à Tokyo, une ville où la technologie et la culture se mélangent.
-        J’aimerais visiter des temples, explorer des quartiers modernes, et goûter à la cuisine locale.
+        J'aimerais visiter des temples, explorer des quartiers modernes, et goûter à la cuisine locale.
       </p>
       <img class="image-large" src="images/tokyo.jpg" alt="Tokyo (image locale)">
+	  <!--Source https://www.audleytravel.com/ca/japan/things-to-do/explore-tokyo-at-your-own-pace-->
     </div>
 
     <div class="boite">
-      <h2>Endroits intéressants à visiter</h2>
-      <ul>
-        <li>
-          <strong>Asakusa (Temple Sensō-ji)</strong><br>
-          <img class="image-moyenne" src="images/asakusa.jpg" alt="Asakusa (image locale)">
-        </li>
-        <li>
-          <strong>Mont Fuji (excursion)</strong><br>
-          <img class="image-moyenne" src="images/fuji.jpg" alt="Mont Fuji (image locale)">
-        </li>
-      </ul>
-    </div>
+  <h2>Endroits intéressants à visiter</h2>
+  <ul>
+    <li>
+      <div class="endroit-conteneur">
+        <img class="image-moyenne" src="images/asakusa.jpg" alt="Asakusa (image locale)">
+        <div>
+          <p class="endroit-titre">Asakusa (Temple Sensō-ji)</p>
+          <p class="endroit-description">
+            Le temple Sensō-ji est le plus ancien temple bouddhiste de Tokyo, fondé en l'an 628.
+            Dédié à Kannon, la déesse de la miséricorde, il accueille environ 30 millions de visiteurs
+            chaque année. L'entrée se fait par la célèbre porte <em>Kaminarimon</em> (« porte du tonnerre »),
+            surmontée d'une immense lanterne rouge. On traverse ensuite la rue commerçante
+            <em>Nakamise-dōri</em>, bordée de boutiques de souvenirs traditionnels, avant d'atteindre
+            le bâtiment principal. Le temple est librement accessible 24h/24 et se trouve à
+            5 minutes à pied de la station de métro Asakusa. Source Claude AI
+          </p>
+        </div>
+      </div>
+      <!-- Source : https://www.japan.travel/en/spot/1691/ -->
+    </li>
+    <li>
+      <div class="endroit-conteneur">
+        <img class="image-moyenne" src="images/fuji.jpg" alt="Mont Fuji (image locale)">
+        <div>
+          <p class="endroit-titre">Mont Fuji (excursion)</p>
+          <p class="endroit-description">
+            Le mont Fuji est le point culminant du Japon avec ses 3 776 mètres d'altitude.
+            Ce stratovolcan au cône presque parfaitement symétrique est situé à environ 100 km
+            au sud-ouest de Tokyo. Vénéré depuis des siècles par les religions shintoïste et
+            bouddhiste, il a été inscrit au patrimoine mondial de l'UNESCO en 2013 comme
+            « lieu sacré et source d'inspiration artistique ». La saison d'ascension s'étend
+            de juillet à fin août, et l'itinéraire le plus populaire est le sentier Yoshida,
+            accessible en bus depuis Tokyo. Source Claude AI
+          </p>
+        </div>
+      </div>
+      <!-- Source : https://fr.wikipedia.org/wiki/Mont_Fuji -->
+      <!-- Source : https://whc.unesco.org/fr/list/1418/ -->
+    </li>
+  </ul>
+</div>
 
     <div class="boite boite-vert">
       <h2>Mets populaires</h2>
@@ -59,20 +123,25 @@
         <tr>
           <td><strong>Sushi</strong></td>
           <td>Riz + garnitures, un classique japonais.</td>
-          <td>
-            <!-- CSS EN LIGNE  -->
-            <img src="images/sushi.jpg" alt="Sushi" style="width:250px; border:2px solid #334155;">
+          <td style="text-align: center; vertical-align: middle;">
+            
+            <img src="images/sushi.jpg" alt="Sushi" style="width:250px; border:2px solid #334155;" >
+			<!--Source https://www.justonecookbook.com/sushi-rolls/-->
           </td>
         </tr>
         <tr>
           <td><strong>Ramen</strong></td>
           <td>Soupe de nouilles chaude et savoureuse.</td>
-          <td><img src="images/ramen.jpg" alt="Ramen" style="width:250px; border:2px solid #334155;"></td>
+          <td style="text-align: center; vertical-align: middle;">
+		    <img src="images/ramen.jpg" alt="Ramen" style="width:250px; border:2px solid #334155;"></td>
+		  <!-- Source https://www.sidechef.com/recipes/9444/traditional_shoyu_ramen/-->
         </tr>
         <tr>
           <td><strong>Mochi</strong></td>
           <td>Dessert doux à base de riz gluant.</td>
-          <td><img src="images/mochi.jpg" alt="Mochi" style="width:250px; border:2px solid #334155;"></td>
+          <td style="text-align: center; vertical-align: middle;">
+		     <img src="images/mochi.jpg" alt="Mochi" style="width:250px; border:2px solid #334155;"></td>
+		  <!-- Source https://www.wandercooks.com/mochi-recipe-kagoshima/-->
         </tr>
       </table>
     </div>
@@ -82,6 +151,6 @@
       <p>Portfolio Gevight</p>
     </div>
   </div>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
-

@@ -8,20 +8,108 @@
        ====================================================== -->
   <meta charset="UTF-8">
   <title>Biographie</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- CSS INTERNE -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS INTERNE Claude AI -->
   <style>
-    /* Style unique à cette page : un paragraphe spécial */
-    #phrase-personnelle{
+    
+    #phrase-personnelle {
       font-weight: bold;
       background-color: #1f2937;
       padding: 10px;
       border: 2px solid #22c55e;
     }
+
+    .lien-carte {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background-color: #0f172a;
+      border: 2px solid #334155;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #f1f5f9;
+      font-weight: bold;
+      font-size: 15px;
+      transition: border-color 0.2s;
+    }
+
+    .lien-carte:hover {
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+
+    .lien-carte img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 15px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .info-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .info-icone {
+      font-size: 26px;
+      min-width: 36px;
+      text-align: center;
+    }
+
+    /* Vertical menu */
+    .menu-vertical {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 210px;
+      background-color: #111827;
+      border-right: 3px solid #38bdf8;
+      padding: 14px 0;
+      height: 100%;
+      z-index: 100;
+    }
+
+    .menu-titre {
+      color: #38bdf8;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 16px 10px 16px;
+      border-bottom: 1px solid #334155;
+      margin: 0 0 8px 0;
+    }
+
+    .menu-vertical a {
+      display: block;
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .menu-vertical a:hover {
+      background-color: #1e293b;
+      color: #38bdf8;
+    }
+
+    /* Push page content to the right */
+    .page {
+      margin-left: 240px;
+    }
+
+    /* Source Claude Ai */
   </style>
 </head>
-
 <body id="profil">
   <div class="navbar">
     <ul>
@@ -32,52 +120,65 @@
     </ul>
   </div>
 
+  <div class="menu-vertical">
+    <p class="menu-titre">Navigation</p>
+    <a href="#profil">👤 Profil</a>
+    <a href="#infos">📋 Infos importantes</a>
+    <a href="#liens">🔗 Mes liens préférés</a>
+    <a href="#competences">💻 Compétences technologiques</a>
+  </div>
+
   <div class="page">
     <h1>Ma biographie</h1>
-
-    <div class="boite">
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#infos">Infos importantes</a></li>
-        <li><a href="#liens">Mes liens préférés</a></li>
-        <li><a href="#competences">Compétences technologiques</a></li>
-      </ul>
-    </div>
 
     <div class="boite boite-bleu" id="profil">
       <h2>Profil</h2>
       <img class="image-moyenne" src="images/gevorg.jpeg" alt="Image qui me représente">
-
       <p><strong>Pseudo :</strong> Gevight</p>
       <p id="phrase-personnelle">
-        J’aime apprendre et créer des projets en programmation Web.
+        J'aime apprendre et créer des projets en programmation Web.
       </p>
     </div>
 
     <div class="boite" id="infos">
-      <h2>Infos importantes </h2>
-      <ul>
-        <li>Intérêts : technologie, sport, projets créatifs.</li>
-        <li>Objectif : améliorer mes compétences en HTML et CSS.</li>
-        <li>Qualité : je suis ambitieux et organisé.</li>
-      </ul>
-	   <p><a href="#profil">Retour au haut de la biographie</a></p>
+      <h2>Infos importantes</h2>
+      <div class="info-item">
+        <span class="info-icone">💻</span>
+        <span><strong>Intérêts :</strong> technologie, sport, projets créatifs.</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icone">🎯</span>
+        <span><strong>Objectif :</strong> améliorer mes compétences en HTML et CSS.</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icone">⭐</span>
+        <span><strong>Qualité :</strong> je suis ambitieux et organisé.</span>
+      </div>
+      <p><a href="#profil">Retour au haut de la biographie</a></p>
     </div>
 
     <div class="boite boite-vert" id="liens">
       <h2>Mes liens préférés</h2>
-      <ul>
-        <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-      </ul>
+      <a class="lien-carte" href="https://developer.mozilla.org/fr/" target="_blank">
+        <!-- Source logo : https://developer.mozilla.org/favicon-48x48.png -->
+        <img src="https://developer.mozilla.org/favicon-48x48.png" alt="Logo MDN">
+        MDN Web Docs
+      </a>
+      <a class="lien-carte" href="https://www.w3schools.com/" target="_blank">
+        <!-- Source logo : https://www.w3schools.com/favicon.ico -->
+        <img src="https://www.w3schools.com/favicon.ico" alt="Logo W3Schools">
+        W3Schools
+      </a>
+      <a class="lien-carte" href="https://github.com/" target="_blank">
+        <!-- Source logo : https://github.com/favicon.ico -->
+        <img src="https://github.com/favicon.ico" alt="Logo GitHub">
+        GitHub
+      </a>
       <p><a href="#profil">Retour au haut de la biographie</a></p>
     </div>
 
     <div class="boite" id="competences">
-      <h2>Compétences technologiques </h2>
-
+      <h2>Compétences technologiques</h2>
       <table>
         <tr>
           <th>Technologie</th>
@@ -102,19 +203,17 @@
         <tr>
           <td>GitHub Pages</td>
           <td><strong>Compétent</strong></td>
-          <td>Je publie un site et j’organise mes dossiers.</td>
+          <td>Je publie un site et j'organise mes dossiers.</td>
         </tr>
       </table>
-
       <p><a href="#profil">Retour au haut de la biographie</a></p>
     </div>
-
     <div class="footer">
-   <p>Portfolio Gevight</p>
+      <p>Portfolio Gevight</p>
       <p><a href="#profil">Retour au haut de la biographie</a></p>
     </div>
   </div>
-  
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
-
